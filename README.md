@@ -14,3 +14,23 @@ sudo docker build -t igaads .
 ```
 sudo docker run -it --rm igaads
 ```
+
+# Example of fetching data
+
+* Forward port 8000 to host machine
+
+```
+sudo docker run -p 8000:8000 -it --rm igaads
+```
+
+* Prepare the data
+
+```
+tar cf output.tar *.data
+```
+
+* Run http server inside the container
+
+```
+python -m SimpleHTTPServer
+```
