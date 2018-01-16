@@ -16,8 +16,8 @@ sudo docker run -it --rm igaads
 ```
 
 Warning:
-Option '--rm' makes the container dissapear after exit.
-You can save the container using 'docker commit' command.
+Option '--rm' makes the container disappear after exit.
+You can save the running container using 'docker commit' command.
 
 # Example of fetching data
 
