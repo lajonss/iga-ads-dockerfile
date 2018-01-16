@@ -34,3 +34,5 @@ tar cf output.tar *.data
 ```
 python -m SimpleHTTPServer
 ```
+
+* The data will be available via HTTP at port 8000 of host machine
