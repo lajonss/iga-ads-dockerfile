@@ -15,6 +15,10 @@ sudo docker build -t igaads .
 sudo docker run -it --rm igaads
 ```
 
+Warning:
+Option '--rm' makes the container dissapear after exit.
+You can save the container using 'docker commit' command.
+
 # Example of fetching data
 
 * Forward port 8000 to host machine
