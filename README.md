@@ -3,16 +3,16 @@
 * Docker installed
 * Sufficient space available
 
-# Building
+# Fetching image from dockerhub
 
 ```
-sudo docker build -t igaads .
+sudo docker pull lajonss/iga-ads
 ```
 
 # Example of use
 
 ```
-sudo docker run -it --rm igaads
+sudo docker run -it --rm iga-ads
 ```
 
 Warning:
@@ -24,7 +24,7 @@ You can save the running container using 'docker commit' command.
 * Forward port 8000 to host machine
 
 ```
-sudo docker run -p 8000:8000 -it --rm igaads
+sudo docker run -p 8000:8000 -it --rm iga-ads
 ```
 
 * Prepare the data
