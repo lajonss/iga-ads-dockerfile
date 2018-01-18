@@ -12,7 +12,7 @@ sudo docker pull lajonss/iga-ads
 # Example of use
 
 ```
-sudo docker run -it --rm iga-ads
+sudo docker run -it --rm lajonss/iga-ads
 ```
 
 Warning:
@@ -24,7 +24,7 @@ You can save the running container using 'docker commit' command.
 * Forward port 8000 to host machine
 
 ```
-sudo docker run -p 8000:8000 -it --rm iga-ads
+sudo docker run -p 8000:8000 -it --rm lajonss/iga-ads
 ```
 
 * Prepare the data
