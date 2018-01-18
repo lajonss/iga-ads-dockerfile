@@ -10,3 +10,8 @@ RUN cd libunittest-9.3.5/ && ./configure && make && make install
 RUN apt-get install -y gnuplot
 RUN git clone https://github.com/marcinlos/iga-ads
 RUN cd iga-ads/ && cmake . && make
+RUN apt-get update && apt-get install -y --no-install-recommends xfce4 tightvncserver
+RUN mkdir /root/.vnc
+COPY xstartup /root/.vnc/xstartup
+EXPOSE 5901
+CMD vncserver
